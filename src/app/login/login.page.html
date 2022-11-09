@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="inicio"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background" padding>
+
+
+<ion-card center>
+  <ion-card-header>
+    Datos del Usuario
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="user">  </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>Contraseña</ion-label>
+        <ion-input type="text" [(ngModel)]="pass">  </ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button block (click)="Signup()">Sign Up</button>
+    </div>
+  </ion-card-content>
+</ion-card>
+<div class="ion-padding">
+
+
+  <div class="ion-text-center" center>
+    <ion-button routerLink="/viaje" color="primary">Tomar viaje</ion-button>
+  </div>
+</div>
+
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "CityCar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
